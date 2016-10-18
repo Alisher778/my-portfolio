@@ -1,0 +1,70 @@
+.about-page{
+  background-color: #fff;
+  width: 100%;
+  margin-top: 115px;
+  padding-top: 12px;
+}
+/*----Fonts----*/
+/*
+  font-family: 'Autour One', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+*/
+@font-face{
+  font-family: 'Baron';
+  src: url('fonts/font_bold.otf');
+}
+body{
+  background: url("images/bg5.jpg")no-repeat center center fixed;
+  background-size: cover;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Autour One', cursive;
+  color: #00bcd4;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+/*------Side Bar----------*/
+.sidebar{
+  width:20%;
+  min-width: 225px;
+  height: auto;
+  border: dashed 1px;
+  float: left;
+  clear: left; 
+  background-color: #3e4b5c;
+  border-radius: 4px;
+}
+.sidebar img{
+  width: 97%;
+  height: auto;
+  margin: 4px;
+}
+.sidebar p{
+  color: white;
+  margin-left: 3px;
+}
+.sidebar h4{
+  text-align: center;
+}
+.fa{
+  margin: 0 7px;
+  color: orange;
+  width: 50px;  
+  text-align: center; 
+}
+.content-center{
+  width: 95%;
+  margin: 0 auto;
+  overflow: auto;
+}
+.content-center img {
+  float: left;
+  margin-right: 15px;
+}
+.text-wrapper{
+  width: 62%;
+  float: left;
+  margin: 0 4%;
+}

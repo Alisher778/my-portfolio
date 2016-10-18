@@ -5,49 +5,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Home</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Autour+One|Open+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css ">
 </head>
 <body>
-  <div class="body-wrapper">
-    
+  <div class="body-wrapper"><!--Global container for the body-->
     <nav>
       <ul>
         <li id="logo"><a href="#">ALI-Great</a></li>
       </ul>
       <ul class="nav-list">
         <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">PROJECTS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
     </nav>
 
     <div class="page1">
-    <div class="animate">
-      <img src="images/me.jpg" alt="">
-      <h1>Hi! I am Alisher Musurmonov</h1>
-    </div>
+      <div class="animate">
+        <img src="images/me.jpg" alt="">
+        <h1>Hi! I am Alisher Musurmonov</h1>
+     </div>
     </div>
     
-    <div class="page2"> <!--2nd Page starts here. Main conatiner-->
+    <!---2nd Page starts here. Main conatiner-->
+    <div class="page2" id="projects"> 
       
       <h1 style="color: black; text-align: center;">Projects</h1>
       
       <div class="projects">
         <div class="project-image">
-          <img src="images/bg.jpg" alt="">
+          <img src="images/project1.png" alt="">
           <div class="inline-view">
             <h3>Go-IELTS</h3>
-            <a href="#" class="view"><button>View App</button></a>
-            <a href="#" class="code"><button>Source Code</button></a>
+            <a href="https://ieltsapp.herokuapp.com/" target="_blank" class="view"><button>View App</button></a>
+            <a href="https://github.com/Alisher778/heroku-app.git" target="_blank" class="code"><button>Source Code</button></a>
           </div>
         </div>
       </div>
       
       <div class="projects">
         <div class="project-image">
-          <img src="images/bg.jpg" alt="">
+          <img src="images/project2.png" alt="">
           <div class="inline-view">
-            <h3>Go-IELTS</h3>
+            <h3>Google Clone</h3>
             <a href="#" class="view"><button>View App</button></a>
             <a href="#" class="code"><button>Source Code</button></a>
           </div>
@@ -56,11 +58,11 @@
 
       <div class="projects">
         <div class="project-image">
-          <img src="images/bg.jpg" alt="">
+          <img src="images/project3.png" alt="">
           <div class="inline-view">
-            <h3>Go-IELTS</h3>
-            <a href="#" class="view"><button>View App</button></a>
-            <a href="#" class="code"><button>Source Code</button></a>
+            <h3>Simple E-Commerce</h3>
+            <a href="http://alisher778.github.io/page3.html" class="view"><button>View App</button></a>
+            <a href="https://github.com/Alisher778/Alisher778.github.io.git" class="code"><button>Source Code</button></a>
           </div>
         </div>
       </div>
@@ -98,7 +100,8 @@
         </div>
       </div>
     
-    </div><!-- 2nd Page Ends here -->
+    </div>
+    <!-- 2nd Page Ends here -->
   
   </div>
 </body>
