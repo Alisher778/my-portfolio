@@ -1,9 +1,11 @@
 .about-page{
   background-color: #fff;
   width: 100%;
-  margin-top: 115px;
+  margin-top: 66px;
   padding-top: 12px;
+  padding-bottom: 30px;
 }
+
 /*----Fonts----*/
 /*
   font-family: 'Autour One', cursive;
