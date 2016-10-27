@@ -5,6 +5,9 @@
   padding-top: 12px;
   padding-bottom: 30px;
 }
+.about-page h1, h3{
+  color: #00bcd4;
+}
 
 /*----Fonts----*/
 /*
@@ -17,13 +20,13 @@
   src: url('fonts/font_bold.otf');
 }
 body{
-  background: url("images/bg5.jpg")no-repeat center center fixed;
+  /*background: url("images/bg5.jpg")no-repeat center center fixed;*/
   background-size: cover;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: 'Autour One', cursive;
-  color: #00bcd4;
 }
+
 p{
   font-family: 'Open Sans', sans-serif;
 }
@@ -49,6 +52,7 @@ p{
 }
 .sidebar h4{
   text-align: center;
+  color: #00bcd4;
 }
 .fa{
   margin: 0 7px;

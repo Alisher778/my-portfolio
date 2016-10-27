@@ -8,12 +8,17 @@
   <link rel="stylesheet" href="about.css">
   <link href="https://fonts.googleapis.com/css?family=Autour+One|Open+Sans|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css ">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="main.js"></script>
 </head>
 <body>
+<div class="loader" style="position: absolute; left: 43%; top: 29%; display: none"><img src="images/heart.gif" alt=""><p>
+  Loading the page ...
+</p></div>
   <div class="body-wrapper"><!--Global container for the body-->
     <nav>
       <ul>
-        <li id="logo"><a href="#">ALI-Great</a></li>
+        <li id="logo"><a href="#"><img src="images/logo.png" alt=""></a></li>
       </ul>
       <ul class="nav-list">
         <li><a href="#">HOME</a></li>
@@ -160,9 +165,59 @@
     
     </div>
     <!-- 2nd Page Ends here -->
+    <div class="skills">
+      <h1>Skills</h1>
+      <h3>Quality Incresing Tools</h3>
+
+      <ul>
+        <li><i class="fa fa-html5" aria-hidden="true"></i><b>HTM 5</b><progress max="100" value="85" id="html"></progress></li>
+        <li><i class="fa fa-css3" aria-hidden="true"></i>
+<b>CSS</b><progress max="100" value="80" id="css"></progress></li>
+        <li><i class="icon-javascript"></i> icon-javascript<b>JavaScrpt</b><progress max="100" value="65" id="javaScript"></progress></li>
+        <li><b>JQuery</b><progress max="100" value="75" id="jquery"></progress></li>
+        <li><b>Bootstrap</b><progress max="100" value="70" id="bootstrap"></progress></li>
+        <li><b>Ruby on Rails</b><progress max="100" value="85" id="rubyOnRails"></progress></li>
+        <li><b>Git</b><progress max="100" value="85" id="git"></progress></li>
+        <li><b>JS Frameworks</b><progress max="100" value="85" id="html"></progress></li>
+      </ul>
+    </div>
     
     <div class="contact">
-      
+    <h2 align="center" id="title">Contact Me</h2>
+      <form action="sent">
+        <p><input type="text" required placeholder="Enter your name *"></p>
+        <p><input type="email" required placeholder="Enter your email *"></p>
+        <p><input type="text" placeholder="Subject(optional)"></p>
+        <p><textarea name="message" rows="15" required placeholder="Type your message *"></textarea>
+        </p> 
+       <input type="submit" value="send" name="submit" id="submitBtn">
+      </form>
+
+      <div class="contact-list">
+        
+        <div id="footerLogo">
+          <img src="images/logo.png" alt="footer logo">
+        </div>
+        
+        <div id="addressLine">
+         <h2 align="center">Contact</h2>
+          <p><i class="fa fa-home" aria-hidden="true"></i>
+          2060 E 19 Street, Brooklyn, NY 11229</p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i>
+          alisher.musurmonov89@gmail.ru</p>
+          <p><i class="fa fa-mobile" aria-hidden="true"></i>
+           +1 917-293-4098</p>
+        </div>
+        
+        <div class="social-btn">
+          <h2>Get In Touch</h2>
+          <a href="https://www.facebook.com/alisher.musurmonov"><i class="fa fa-facebook-square" aria-hidden="true" style="color: #2e4688;"></i></a>
+          <a href="https://github.com/Alisher778"><i class="fa fa-github-square" aria-hidden="true" style="color: #333333;"></i></a>
+          <a href="https://www.linkedin.com/in/alisher-musurmonov-91a7aa85"><i class="fa fa-linkedin-square" aria-hidden="true" style="color: #1784bb;"></i></a>
+          <a href="https://twitter.com/alishermusurmon"><i class="fa fa-twitter-square" aria-hidden="true" style="color: #6cadde;"></i></a>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </body>
