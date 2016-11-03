@@ -10,11 +10,10 @@
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css ">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="main.js"></script>
+  <script src="jquery-circle-progress/dist/circle-progress.js"></script><!--FOR radial progress bar -->
 </head>
 <body>
-<div class="loader" style="position: absolute; left: 43%; top: 29%; display: none"><img src="images/heart.gif" alt=""><p>
-  Loading the page ...
-</p></div>
+
   <div class="body-wrapper"><!--Global container for the body-->
     <nav>
       <ul>
@@ -24,11 +23,12 @@
         <li><a href="#">HOME</a></li>
         <li><a href="#about-page">ABOUT</a></li>
         <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
-
-    <div class="page1">
+    <div id="circle"></div>
+     <div class="page1">
       <div class="animate">
         <img src="images/me.jpg" alt="">
         <h1>Hi! I am Alisher Musurmonov</h1>
@@ -164,31 +164,122 @@
       </div>
     
     </div>
-    <!-- 2nd Page Ends here -->
+    <!-- SKILLS page -->
+    <div id="skills"></div>
     <div class="skills">
       <h1>Skills</h1>
       <h3>Quality Incresing Tools</h3>
 
       <ul>
-        <li><i class="fa fa-html5" aria-hidden="true"></i><b>HTM 5</b><progress max="100" value="85" id="html"></progress></li>
-        <li><i class="fa fa-css3" aria-hidden="true"></i>
-<b>CSS</b><progress max="100" value="80" id="css"></progress></li>
-        <li><i class="icon-javascript"></i> icon-javascript<b>JavaScrpt</b><progress max="100" value="65" id="javaScript"></progress></li>
-        <li><b>JQuery</b><progress max="100" value="75" id="jquery"></progress></li>
-        <li><b>Bootstrap</b><progress max="100" value="70" id="bootstrap"></progress></li>
-        <li><b>Ruby on Rails</b><progress max="100" value="85" id="rubyOnRails"></progress></li>
-        <li><b>Git</b><progress max="100" value="85" id="git"></progress></li>
-        <li><b>JS Frameworks</b><progress max="100" value="85" id="html"></progress></li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="242,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">95%</text>
+          </svg>
+          <p>HTML</p>
+        </li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="225,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">90%</text>
+          </svg>
+          <p>css</p>
+        </li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="175,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">70%</text>
+          </svg>
+          <p>JavaScript</p>
+        </li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="175,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">70%</text>
+          </svg>
+          <p>JQuery</p>
+        </li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="187,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">75%</text>
+          </svg>
+          <p>Ruby On Rails</p>
+        </li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="200,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">80%</text>
+          </svg>
+          <p>Bootstrap</p>
+        </li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="175,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">70%</text>
+          </svg>
+          <p>Node JS & Express JS</p>
+        </li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="212,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">85%</text>
+          </svg>
+          <p>Git</p>
+        </li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="172,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">70%</text>
+          </svg>
+          <p>Sass & Less</p>
+        </li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="250.2,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">100%</text>
+          </svg>
+          <p>Research & Resourcefulness</p>
+        </li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="250.2,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">200%</text>
+          </svg>
+          <p>Energy & Potential</p>
+        </li>
+        <li>
+          <svg id="svg" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff" stroke-dasharray="50,250.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">20%</text>
+          </svg>
+          <p>React</p>
+        </li>
       </ul>
     </div>
     
+    <!--      Contact Me Page -->
+    <div id="contact"></div>
     <div class="contact">
     <h2 align="center" id="title">Contact Me</h2>
+    <p id="p"><large>Ask me anything?</large> If you have a question or job offer, just send me message and I will get back soon!</p>
       <form action="sent">
         <p><input type="text" required placeholder="Enter your name *"></p>
         <p><input type="email" required placeholder="Enter your email *"></p>
         <p><input type="text" placeholder="Subject(optional)"></p>
-        <p><textarea name="message" rows="15" required placeholder="Type your message *"></textarea>
+        <p><textarea name="message" rows="20" required placeholder="Type your message *"></textarea>
         </p> 
        <input type="submit" value="send" name="submit" id="submitBtn">
       </form>
