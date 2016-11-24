@@ -1,7 +1,9 @@
-// $(document).ready(function(){
-//   $('.body-wrapper').css('display','none');
-//   $('.loader').fadeOut(7000, function(){
-//     $('.body-wrapper').fadeIn(0);
-//   });
-  
-// });
+$(document).ready(function(){
+
+  $(document).scroll(function() {
+    var dHeight = $(this).height()-$(window).height();
+    if (dHeight >= $(this).scrollTop()) {
+      $('nav').css('background', 'rgba(1,16,24,' + $(this).scrollTop() / dHeight + ')');
+    }
+  });
+});
