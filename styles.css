@@ -183,29 +183,40 @@ ul li ,p{
   margin: 66px auto 10px auto;
   padding-top: 12px;
 }
-.projects{
+#projects li{
+  position: relative;
   width: 30%;
   height: auto;
-  min-width: 300px;
   float: left;
   padding: 4px;
-  border: 1px solid;
   margin: 1% 1.3%;
-  overflow: auto;
-  background-color: #96ebf6;
+  list-style: none;
 }
-.project-image img{
-  width: 99%;
-  height: 80%;
+
+#projects img{
+  width: 98%;
+  height: 98%;
   margin: 1px;
   padding: 1px;
 }
-.inline-view h3{
-  display: inline-block;
+
+.inline-view{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(11, 12, 11, 0.71);
 }
+
 .inline-view a{
   text-decoration: none;
 }
+#projects li:hover .inline-view{
+  display: block;
+}
+
 .view button, .code button{
   border-radius: 6px;
   border: 0;
@@ -224,6 +235,44 @@ ul li ,p{
 .code button{
   background-color: #FF7F00;
 }
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 12, 11, 0.88);
+  z-index: 100;
+  overflow: auto;
+}
+
+.overlay-img{
+  position: relative;
+  left: 20%;
+  margin-top: 05%;
+  width: 60%;
+  height: auto;
+}
+
+.close{
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  color: white;
+  z-index: 101;
+}
+
+#projects div{
+  display: none;
+}
+.source{
+  color: #fff;
+  text-align: center; 
+}
+
  /*------------------- skills page ------------------------*/
 .skills{
   background-color: #00BCD4;
