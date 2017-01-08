@@ -64,7 +64,12 @@ nav ul li a:hover, nav ul li a:active {
   position: relative; 
   right: 30px;
 }
-
+#media-nav{
+  display: none;
+}
+.fa.fa-sort-asc{
+  display: none;
+}
 /*---------------PAGE1 starts here------------*/
 .page1{
   width: 100%;
@@ -198,6 +203,7 @@ ul li ,p{
   height: 98%;
   margin: 1px;
   padding: 1px;
+  border: 1px solid black;
 }
 
 .inline-view{
@@ -271,6 +277,38 @@ ul li ,p{
 .source{
   color: #fff;
   text-align: center; 
+}
+h3.h3{
+  text-align: center;
+}
+p.p{
+  text-align: center;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+a.demo, a.source{
+  position: relative;
+  left: 43%;
+}
+.overlay button{
+  margin: 3px 6px;
+  border-radius: 15px;
+  width: 89px;
+  height: 23px;
+  padding: 3px;
+  cursor: pointer;
+  border: 1px solid;
+  outline: none;
+}
+
+a.demo button{
+  background-color: #36c0f5;
+}
+
+a.source button{
+  background-color: #3ed644;
 }
 
  /*------------------- skills page ------------------------*/
@@ -400,7 +438,7 @@ form textarea{
   color: orange;
 }
 #footerLogo{
-  width: 15%;
+  width: 20%;
   float: left;
 }
 #footerLogo img{
@@ -410,13 +448,13 @@ form textarea{
   top: 53px;
   left: 41px;
 }
-#addressLine{
+/*#addressLine{
   width: 42%;
   float: left;
   text-align: center;
   text-align: left;
   font-weight: bold;
-}
+}*/
 #addressLine p{
  margin-left: 64px;
  margin-top: -7px;
@@ -426,7 +464,7 @@ form textarea{
  font-size: 24px;
 }
 .social-btn{
-  width: 42%;
+  width: 57%;
   height: 180px;
   float: left;
   text-align: center;
@@ -435,4 +473,131 @@ form textarea{
 .contact-list i{
   font-size: 48px;
   text-shadow: 0 0 0 transparent;
+}
+
+
+
+/*------------------Media queries-----------------------------*/
+
+@media only screen and (max-width: 480px){
+  #media-nav{
+    display: block;
+  }
+  nav{
+    max-height: 63px;
+  }
+  .nav-list{
+    display: none;
+    margin-left: 0;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -70px;
+  }
+  .nav-list li{
+    display: block;
+    margin-left: 0;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    background-color: #2e6e35;
+    padding-left: 40%;
+  }
+  #logo{
+    position: relative;
+    left: -30px;
+  }
+  i.fa.fa-bars{
+    display: block;
+    float: right;
+    font-size: 29px;
+    cursor: pointer;
+    position: relative;
+    bottom: -2px;
+  }
+  .fa.fa-sort-asc {
+    display: inline-block;
+    position: relative;
+    top: 28px;
+    font-size: 47px;
+    float: right;
+    color: white;
+    color: #2e6e35;
+  }
+  /*------Page 1 ----------*/
+  .page1{
+    height: 456px; 
+  }
+  .page1 img{
+    width: 201px;
+    height: 180px;
+  }
+
+  /*-------Page 2 ----------------*/
+
+  .sidebar{
+    width: 100%;
+  }
+  .text-wrapper{
+    width: 92%;
+  }
+  .text-wrapper h3{
+    cursor: pointer;
+    text-align: center;
+  }
+  .text-wrapper p, .text-wrapper ul{
+    display: none;
+  }
+
+  /* ---- Projects page -------------*/
+
+  #projects li{
+    width: 95%; 
+    margin-left: -15px;
+  }
+  .overlay-img {
+    width: 98%;
+    margin: 0;
+    position: relative;
+    left: 0;
+    top: 20%;
+  }
+
+  .page2{
+    height: 700px;
+  }
+  .skills ul li{
+    width: 43%;
+  }
+  .skills p{
+    font-size: 17px;
+  }
+
+
+  /* ------ Contact Page-----------------*/
+  .contact form{
+    width: 100%;
+    margin-left: 0;
+  }
+  form p input{
+    width: 80%;
+  }
+  form textarea{
+    width: 80%;
+  }
+
+  #footerLogo{
+    display: none;
+  }
+  #addressLine{
+    width: 100%;
+  }
+  #addressLine p{
+    margin-left: 0;
+    font-size: 12px;
+  }
+  .social-btn{
+    width: 100%;
+    margin-top: 46px;
+  }
 }
